@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Routes, Route, Outlet, Link, BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <h1>Hello world!</h1>
+
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                Something
+                <Outlet />
+              </div>
+            }
+          >
+            <Route index element={<div>Something else</div>} />
+            <Route path="about" element={<h2>About</h2>} />
+            <Route path="dashboard" element={<h2>Dashboard</h2>} />
+
+            {/* Using path="*"" means "match anything", so this route
+            acts like a catch-all for URLs that we don't have explicit
+            routes for. */}
+            <Route path="*" element={<h2>Oh noes</h2>} />
+          </Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

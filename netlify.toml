@@ -6,9 +6,12 @@
 
   [[plugins.inputs.audits]]
     path = ""
+    output_path = "reports/main.html"
 
   [[plugins.inputs.audits]]
     path = "about"
+    output_path = "reports/about.html"
 
   [[plugins.inputs.audits]]
     path = "dashboard"
+    output_path = "reports/dashboard.html"

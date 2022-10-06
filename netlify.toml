@@ -9,11 +9,11 @@
     output_path = "reports/main.html"
 
   [[plugins.inputs.audits]]
-    urlPath = "about"
+    fileName = "about"
     path = ""
     output_path = "reports/about.html"
 
   [[plugins.inputs.audits]]
-    urlPath = "dashboard"
+    fileName = "dashboard"
     path = ""
     output_path = "reports/dashboard.html"

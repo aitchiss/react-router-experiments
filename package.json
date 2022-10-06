@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@netlify/plugin-lighthouse": "https://github.com/netlify/netlify-plugin-lighthouse.git#sa/860/allowRunningLighthouseOnRoutesAvailableInPublishFolder",
+    "@netlify/plugin-lighthouse": "https://github.com/netlify/netlify-plugin-lighthouse.git#sa/860/experimentSubDirs",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

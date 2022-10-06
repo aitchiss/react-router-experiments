@@ -10,8 +10,10 @@
 
   [[plugins.inputs.audits]]
     urlPath = "about"
+    path = ""
     output_path = "reports/about.html"
 
   [[plugins.inputs.audits]]
     urlPath = "dashboard"
+    path = ""
     output_path = "reports/dashboard.html"
